@@ -28,10 +28,12 @@ struct ListRow: View {
     var body: some View {
         HStack {
             Text(eachApp.displayName)
-//            Spacer()
-//            Text(eachApp.id)
             Spacer()
-            Text(String(eachApp.duration.stringFromTimeInterval()))
+            Text(eachApp.id)
+            Spacer()
+            Text("\(eachApp.numberOfPickups)")
+            Spacer()
+            Text(String(eachApp.duration.formatted()))
         }
     }
 }

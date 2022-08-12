@@ -16,6 +16,7 @@ struct AppDeviceActivity: Identifiable {
     var id: String
     var displayName: String
     var duration: TimeInterval
+    var numberOfPickups: Int
 }
 
 extension TimeInterval{

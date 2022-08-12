@@ -40,8 +40,9 @@ struct TotalActivityReport: DeviceActivityReportScene {
                     for await ap in c.applications {
                         let appName = (ap.application.localizedDisplayName ?? "nil")
                         let bundle = (ap.application.bundleIdentifier ?? "nil")
-                        let duration = (ap.totalActivityDuration)
-                        let app = AppDeviceActivity(id: bundle, displayName: appName, duration: duration)
+                        let duration = ap.totalActivityDuration
+                        let numberOfPickups = ap.numberOfPickups
+                        let app = AppDeviceActivity(id: bundle, displayName: appName, duration: duration, numberOfPickups: numberOfPickups)
                         list.append(app)
                     }
                 }
