@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,46 @@
 		737E3E912886A57500ECE164 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737E3E902886A57500ECE164 /* ContentView.swift */; };
 		737E3E932886A57600ECE164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 737E3E922886A57600ECE164 /* Assets.xcassets */; };
 		737E3E962886A57600ECE164 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 737E3E952886A57600ECE164 /* Preview Assets.xcassets */; };
+		73B3B35328930ADE0079AAC4 /* MonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B3B35228930ADE0079AAC4 /* MonitorExtension.swift */; };
+		73B3B35528930ADE0079AAC4 /* TotalActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B3B35428930ADE0079AAC4 /* TotalActivityReport.swift */; };
+		73B3B35728930ADE0079AAC4 /* TotalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B3B35628930ADE0079AAC4 /* TotalActivityView.swift */; };
+		73B3B35C28930ADE0079AAC4 /* MonitorExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 73B3B35028930ADE0079AAC4 /* MonitorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		73B3B36128930B440079AAC4 /* AppDeviceActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B3B36028930B440079AAC4 /* AppDeviceActivity.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73B3B35A28930ADE0079AAC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 737E3E832886A57500ECE164 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73B3B34F28930ADE0079AAC4;
+			remoteInfo = MonitorExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		737E3EB22886A5E100ECE164 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73B3B34828930A170079AAC4 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				73B3B35C28930ADE0079AAC4 /* MonitorExtension.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		737E3E8B2886A57500ECE164 /* Screen Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screen Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +58,25 @@
 		737E3E902886A57500ECE164 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		737E3E922886A57600ECE164 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		737E3E952886A57600ECE164 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		737E3EB32886A61C00ECE164 /* Screen Time.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Screen Time.entitlements"; sourceTree = "<group>"; };
+		73B3B35028930ADE0079AAC4 /* MonitorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = MonitorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		73B3B35228930ADE0079AAC4 /* MonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorExtension.swift; sourceTree = "<group>"; };
+		73B3B35428930ADE0079AAC4 /* TotalActivityReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityReport.swift; sourceTree = "<group>"; };
+		73B3B35628930ADE0079AAC4 /* TotalActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityView.swift; sourceTree = "<group>"; };
+		73B3B35828930ADE0079AAC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73B3B35928930ADE0079AAC4 /* MonitorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MonitorExtension.entitlements; sourceTree = "<group>"; };
+		73B3B36028930B440079AAC4 /* AppDeviceActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDeviceActivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		737E3E882886A57500ECE164 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73B3B34D28930ADE0079AAC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				737E3E8D2886A57500ECE164 /* Screen Time */,
+				73B3B35128930ADE0079AAC4 /* MonitorExtension */,
 				737E3E8C2886A57500ECE164 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				737E3E8B2886A57500ECE164 /* Screen Time.app */,
+				73B3B35028930ADE0079AAC4 /* MonitorExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +107,7 @@
 		737E3E8D2886A57500ECE164 /* Screen Time */ = {
 			isa = PBXGroup;
 			children = (
+				737E3EB32886A61C00ECE164 /* Screen Time.entitlements */,
 				737E3E8E2886A57500ECE164 /* Screen_TimeApp.swift */,
 				737E3E902886A57500ECE164 /* ContentView.swift */,
 				737E3E922886A57600ECE164 /* Assets.xcassets */,
@@ -67,6 +124,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		73B3B35128930ADE0079AAC4 /* MonitorExtension */ = {
+			isa = PBXGroup;
+			children = (
+				73B3B35228930ADE0079AAC4 /* MonitorExtension.swift */,
+				73B3B35428930ADE0079AAC4 /* TotalActivityReport.swift */,
+				73B3B35628930ADE0079AAC4 /* TotalActivityView.swift */,
+				73B3B35828930ADE0079AAC4 /* Info.plist */,
+				73B3B35928930ADE0079AAC4 /* MonitorExtension.entitlements */,
+				73B3B36028930B440079AAC4 /* AppDeviceActivity.swift */,
+			);
+			path = MonitorExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +147,35 @@
 				737E3E872886A57500ECE164 /* Sources */,
 				737E3E882886A57500ECE164 /* Frameworks */,
 				737E3E892886A57500ECE164 /* Resources */,
+				737E3EB22886A5E100ECE164 /* Embed Foundation Extensions */,
+				73B3B34828930A170079AAC4 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				73B3B35B28930ADE0079AAC4 /* PBXTargetDependency */,
 			);
 			name = "Screen Time";
 			productName = "Screen Time";
 			productReference = 737E3E8B2886A57500ECE164 /* Screen Time.app */;
 			productType = "com.apple.product-type.application";
+		};
+		73B3B34F28930ADE0079AAC4 /* MonitorExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73B3B35D28930ADE0079AAC4 /* Build configuration list for PBXNativeTarget "MonitorExtension" */;
+			buildPhases = (
+				73B3B34C28930ADE0079AAC4 /* Sources */,
+				73B3B34D28930ADE0079AAC4 /* Frameworks */,
+				73B3B34E28930ADE0079AAC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonitorExtension;
+			productName = MonitorExtension;
+			productReference = 73B3B35028930ADE0079AAC4 /* MonitorExtension.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,10 +190,13 @@
 					737E3E8A2886A57500ECE164 = {
 						CreatedOnToolsVersion = 14.0;
 					};
+					73B3B34F28930ADE0079AAC4 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 				};
 			};
 			buildConfigurationList = 737E3E862886A57500ECE164 /* Build configuration list for PBXProject "Screen Time" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -116,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				737E3E8A2886A57500ECE164 /* Screen Time */,
+				73B3B34F28930ADE0079AAC4 /* MonitorExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +221,13 @@
 			files = (
 				737E3E962886A57600ECE164 /* Preview Assets.xcassets in Resources */,
 				737E3E932886A57600ECE164 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73B3B34E28930ADE0079AAC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +243,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		73B3B34C28930ADE0079AAC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73B3B36128930B440079AAC4 /* AppDeviceActivity.swift in Sources */,
+				73B3B35728930ADE0079AAC4 /* TotalActivityView.swift in Sources */,
+				73B3B35328930ADE0079AAC4 /* MonitorExtension.swift in Sources */,
+				73B3B35528930ADE0079AAC4 /* TotalActivityReport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73B3B35B28930ADE0079AAC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73B3B34F28930ADE0079AAC4 /* MonitorExtension */;
+			targetProxy = 73B3B35A28930ADE0079AAC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		737E3E972886A57600ECE164 /* Debug */ = {
@@ -262,8 +382,11 @@
 		737E3E9A2886A57600ECE164 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Screen Time/Screen Time.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Screen Time/Preview Content\"";
@@ -282,6 +405,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.labalab.Screen-Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,8 +415,11 @@
 		737E3E9B2886A57600ECE164 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Screen Time/Screen Time.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Screen Time/Preview Content\"";
@@ -311,6 +438,63 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.labalab.Screen-Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		73B3B35E28930ADE0079AAC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MonitorExtension/MonitorExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z58S2Y5JMY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MonitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MonitorExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.labalab.Screen-Time.MonitorExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73B3B35F28930ADE0079AAC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MonitorExtension/MonitorExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z58S2Y5JMY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MonitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MonitorExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.labalab.Screen-Time.MonitorExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,6 +518,15 @@
 			buildConfigurations = (
 				737E3E9A2886A57600ECE164 /* Debug */,
 				737E3E9B2886A57600ECE164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73B3B35D28930ADE0079AAC4 /* Build configuration list for PBXNativeTarget "MonitorExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73B3B35E28930ADE0079AAC4 /* Debug */,
+				73B3B35F28930ADE0079AAC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
