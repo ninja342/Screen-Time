@@ -53,29 +53,4 @@ struct TotalActivityReport: DeviceActivityReportScene {
     }
 }
 
-    
-//    // You can extract the configuration creation logic into a generic function that can
-//    // be tested with mock data types (see SampleData.swift for more details).
-//    static func makeConfiguration<D: ActivityData, S: ActivitySegment>(representing data: [D]) -> String where D.Segment == S {
-//        let formatter = DateComponentsFormatter()
-//        formatter.allowedUnits = [.day, .hour, .minute, .second]
-//        formatter.unitsStyle = .abbreviated
-//        formatter.zeroFormattingBehavior = .dropAll
-//        for d in data {
-//            return d.activitySegments.description
-//        }
-//        let totalActivityDuration = data.flatMap { $0.activitySegments }.reduce(0, {
-//            $0 + $1.totalActivityDuration
-//        })
-//        for d in data {
-//            d.activitySegments[0].totalActivityDuration
-//        }
-//        for d in data {
-//            if let dc = d as? DeviceActivityData {
-//                return dc.device.name!
-//            }
-//        }
-//
-//        return formatter.string(from: totalActivityDuration) ?? "No activity data"
-//    }
 
